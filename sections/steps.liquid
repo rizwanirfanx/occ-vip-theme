@@ -1,4 +1,4 @@
-<div id="steps" class="steps" style="background-image: url({{ section.settings.section_background_image |  image_url  }});">
+<div id="steps" class="steps" style="background-image: url({{ section.settings.bg_image |  image_url  }});">
     <div class="steps__container">
         {% for block in section.blocks %}
             {% case block.type %}
@@ -19,7 +19,7 @@
       "settings": [
         {
             "type": "image_picker",
-            "id": "section_background_image",
+            "id": "bg_image",
             "label": "Section BG Image"
         }
       ],

@@ -1,0 +1,86 @@
+<section class="video-section">
+    <div class="video-section__container" style="background-image: url({{ section.settings.section_bg_image |  image_url  }})">
+        <div class="video-section__container__text">
+            <h3 class="video-section__container__text__title">{{ section.settings.section_title }}</h3>
+            <div class="video-section__container__text__bullet-points">
+                {% for block in section.blocks %}
+                    {% case block.type %}
+                        {% when 'bullet_point' %}
+                            <div class="video-section__container__text__bullet-points__point">
+                              <img class="video-section__container__text__bullet-points__point__img" src="{{ block.settings.bullet_point_image |  image_url  }}"/>
+                              <div class="video-section__container__text__bullet-points__point__text">
+                                <h4>{{ block.settings.bullet_point_title }}</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, quo.</p>
+                              </div>
+                            </div>
+                    {% endcase %}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="video-section__container__video" style="background-image: url({{ section.settings.section_image |  image_url  }});">
+
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+    "name": "YT Video Section",
+    "blocks": [
+        {
+            "type": "bullet_point",
+            "name": "Bullet Point",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "bullet_point_image",
+                    "label": "Image for Bullet Point"
+                },
+                {
+                    "type": "text",
+                    "id": "bullet_point_title",
+                    "label": "Title for Bullet Point",
+                    "default": "Default Title"
+                },
+                {
+                    "type": "text",
+                    "id": "bullet_point_description",
+                    "label": "Description for Bullet Point",
+                    "default": "Default Description for Bullet Point"
+                }
+            ]
+        }
+    ],
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "section_bg_image",
+        "label": "Section BG Image"
+      },
+      {
+        "type": "url",
+        "id": "video_url",
+        "label": "Video URL",
+        "info": "Enter the URL of the video (YouTube, Vimeo, etc.)"
+      },
+      {
+        "type": "image_picker",
+        "id": "section_image",
+        "label": "Section Image",
+        "info": "Select an Thumbnail Picture for the Video"
+      },
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": "Section Title",
+        "default": "Make History as The Next Winner"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Video Section"
+      }
+    ]
+  }
+
+{% endschema %}
+  

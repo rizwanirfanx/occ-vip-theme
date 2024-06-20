@@ -1,0 +1,38 @@
+.video-section{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.video-section__container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+}
+.video-section__container__text__title{
+    color: red;
+    margin: 0;
+}
+
+.video-section__container__text__bullet-points__point__img{
+    width: 5rem;
+}
+
+.video-section__container__text{
+    padding: 3rem;
+}
+.video-section__container__video{
+    background-size: cover;
+}
+
+.video-section__container__text__bullet-points__point {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+.video-section__container__text__bullet-points__point__img {
+    margin-right: 2rem;
+}
+.video-section__container__text__bullet-points__point__text > h4, .video-section__container__text__bullet-points__point__text > p{
+    margin: 0;
+    color: black;
+}
