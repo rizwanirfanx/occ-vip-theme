@@ -1,0 +1,6 @@
+.offer__container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 3rem 6rem;
+    margin: 0 auto;
+}
