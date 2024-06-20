@@ -1,0 +1,38 @@
+<!-- sections/custom-section.liquid -->
+
+{% schema %}
+    {
+      "name": "Custom Section",
+      "settings": [],
+      "blocks": [
+        {
+          "type": "block",
+          "name": "Block",
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "logo",
+              "label": "Logo"
+            },
+            {
+              "type": "text",
+              "id": "title",
+              "label": "Title"
+            },
+            {
+              "type": "textarea",
+              "id": "text",
+              "label": "Text"
+            }
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Custom Section",
+          "category": "Custom"
+        }
+      ]
+    }
+    {% endschema %}
+    

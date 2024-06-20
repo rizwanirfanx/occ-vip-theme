@@ -1,0 +1,312 @@
+{
+    "sections": {
+        "image-with-text": {
+            "type": "image-with-text",
+            "blocks": {
+                "heading": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "BECOME A VIP OCC MEMBERata",
+                        "heading_size": "h0"
+                    }
+                },
+                "17635a9b-6e66-490c-9fd8-2e3f65edbfd9": {
+                    "type": "caption",
+                    "settings": {
+                        "caption": "FOR YOUR CHANCE TO WIN A CUSTOM CHOPPER & MORE!",
+                        "text_style": "caption-with-letter-spacing",
+                        "text_size": "medium"
+                    }
+                },
+                "button": {
+                    "type": "button",
+                    "settings": {
+                        "button_label": "REGISTER NOW",
+                        "button_link": "shopify:\/\/products\/vip-membership",
+                        "button_style_secondary": false
+                    }
+                }
+            },
+            "block_order": [
+                "heading",
+                "17635a9b-6e66-490c-9fd8-2e3f65edbfd9",
+                "button"
+            ],
+            "settings": {
+                "image": "shopify:\/\/shop_images\/Logo_for_sturgis_billboard.png",
+                "height": "medium",
+                "desktop_image_width": "medium",
+                "layout": "text_first",
+                "desktop_content_position": "middle",
+                "desktop_content_alignment": "left",
+                "content_layout": "no-overlap",
+                "section_color_scheme": "background-1",
+                "color_scheme": "background-1",
+                "image_behavior": "none",
+                "mobile_content_alignment": "left",
+                "padding_top": 40,
+                "padding_bottom": 0
+            }
+        },
+        "be4eb578-a445-4a10-bd8c-ed0e506a600a": {
+            "type": "image-banner",
+            "blocks": {
+                "template--21727693668625__be4eb578-a445-4a10-bd8c-ed0e506a600a-heading-1": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "WHAT'S IN IT FOR YOU?",
+                        "heading_size": "h2"
+                    }
+                },
+                "template--21727693668625__be4eb578-a445-4a10-bd8c-ed0e506a600a-text-1": {
+                    "type": "text",
+                    "settings": {
+                        "text": "• 100 ENTRIES TO WIN A CUSTOM BIKE BUILT BY PAUL SR. • 100 ENTRIES INTO ADDITIONAL GIVEAWAYS • VIP MERCH • DISCOUNT CODES • EXCLUSIVE ACCESS TO PAUL'S PROJECTS • AND MORE!",
+                        "text_style": "body"
+                    }
+                }
+            },
+            "block_order": [
+                "template--21727693668625__be4eb578-a445-4a10-bd8c-ed0e506a600a-heading-1",
+                "template--21727693668625__be4eb578-a445-4a10-bd8c-ed0e506a600a-text-1"
+            ],
+            "settings": {
+                "image": "shopify:\/\/shop_images\/Untitled_design_7.png",
+                "image_overlay_opacity": 0,
+                "image_height": "medium",
+                "desktop_content_position": "middle-center",
+                "show_text_box": true,
+                "desktop_content_alignment": "center",
+                "color_scheme": "",
+                "image_behavior": "none",
+                "mobile_content_alignment": "center",
+                "stack_images_on_mobile": true,
+                "show_text_below": true
+            }
+        },
+        "slideshow_F38rFy": {
+            "type": "slideshow",
+            "blocks": {
+                "slide_nNq6wB": {
+                    "type": "slide",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/Photo_Apr_28_2024_10_42_26_AM_2.jpg",
+                        "heading": "THIS BIKE COULD BE YOURS",
+                        "heading_size": "h2",
+                        "subheading": "Want 100 Entries for Your Chance to Win?",
+                        "button_label": "Sign Up Now",
+                        "link": "shopify:\/\/products\/vip-membership",
+                        "button_style_secondary": false,
+                        "box_align": "middle-center",
+                        "show_text_box": true,
+                        "text_alignment": "center",
+                        "image_overlay_opacity": 0,
+                        "color_scheme": "",
+                        "text_alignment_mobile": "center"
+                    }
+                },
+                "slide_makAhm": {
+                    "type": "slide",
+                    "disabled": true,
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/VIPCHopper.jpg",
+                        "heading": "CUSTOM BUILT",
+                        "heading_size": "h2",
+                        "subheading": "",
+                        "button_label": "Sign Up Now",
+                        "link": "shopify:\/\/products\/vip-membership",
+                        "button_style_secondary": false,
+                        "box_align": "middle-center",
+                        "show_text_box": true,
+                        "text_alignment": "center",
+                        "image_overlay_opacity": 0,
+                        "color_scheme": "",
+                        "text_alignment_mobile": "center"
+                    }
+                },
+                "slide_APT8QM": {
+                    "type": "slide",
+                    "disabled": true,
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/Photo_Jan_24_2024_11_12_54_AM.jpg",
+                        "heading": "ONE OF A KIND",
+                        "heading_size": "h2",
+                        "subheading": "",
+                        "button_label": "Sign Up Now",
+                        "link": "shopify:\/\/products\/vip-membership",
+                        "button_style_secondary": false,
+                        "box_align": "middle-center",
+                        "show_text_box": true,
+                        "text_alignment": "center",
+                        "image_overlay_opacity": 0,
+                        "color_scheme": "background-1",
+                        "text_alignment_mobile": "center"
+                    }
+                },
+                "slide_3qbeUN": {
+                    "type": "slide",
+                    "disabled": true,
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/VIP_CHOPPER_9.jpg",
+                        "heading": "ONE MEMBER WILL TAKE IT HOME",
+                        "heading_size": "h2",
+                        "subheading": "",
+                        "button_label": "Sign Up Now",
+                        "link": "shopify:\/\/products\/vip-membership",
+                        "button_style_secondary": false,
+                        "box_align": "middle-center",
+                        "show_text_box": true,
+                        "text_alignment": "center",
+                        "image_overlay_opacity": 0,
+                        "color_scheme": "background-1",
+                        "text_alignment_mobile": "center"
+                    }
+                }
+            },
+            "block_order": [
+                "slide_nNq6wB",
+                "slide_makAhm",
+                "slide_APT8QM",
+                "slide_3qbeUN"
+            ],
+            "settings": {
+                "layout": "full_bleed",
+                "slide_height": "medium",
+                "slider_visual": "counter",
+                "auto_rotate": false,
+                "change_slides_speed": 5,
+                "image_behavior": "none",
+                "show_text_below": true,
+                "accessibility_info": "Slideshow about our brand"
+            }
+        },
+        "e5074a1b-42e8-4a9a-8d46-0f0a1ff6a746": {
+            "type": "featured-product",
+            "blocks": {
+                "template--21727693668625__e5074a1b-42e8-4a9a-8d46-0f0a1ff6a746-text-1": {
+                    "type": "text",
+                    "settings": {
+                        "text": "{{ section.settings.product.vendor }}",
+                        "text_style": "uppercase"
+                    }
+                },
+                "template--21727693668625__e5074a1b-42e8-4a9a-8d46-0f0a1ff6a746-title-1": {
+                    "type": "title",
+                    "settings": {
+                        "heading_size": "h1"
+                    }
+                },
+                "template--21727693668625__e5074a1b-42e8-4a9a-8d46-0f0a1ff6a746-price-1": {
+                    "type": "price",
+                    "settings": {}
+                },
+                "template--21727693668625__e5074a1b-42e8-4a9a-8d46-0f0a1ff6a746-variant_picker-1": {
+                    "type": "variant_picker",
+                    "settings": {
+                        "picker_type": "button"
+                    }
+                },
+                "template--21727693668625__e5074a1b-42e8-4a9a-8d46-0f0a1ff6a746-quantity_selector-1": {
+                    "type": "quantity_selector",
+                    "settings": {}
+                },
+                "template--21727693668625__e5074a1b-42e8-4a9a-8d46-0f0a1ff6a746-buy_buttons-1": {
+                    "type": "buy_buttons",
+                    "settings": {
+                        "show_dynamic_checkout": true,
+                        "show_gift_card_recipient": true
+                    }
+                },
+                "template--21727693668625__e5074a1b-42e8-4a9a-8d46-0f0a1ff6a746-share-1": {
+                    "type": "share",
+                    "settings": {
+                        "share_label": "Share"
+                    }
+                }
+            },
+            "block_order": [
+                "template--21727693668625__e5074a1b-42e8-4a9a-8d46-0f0a1ff6a746-text-1",
+                "template--21727693668625__e5074a1b-42e8-4a9a-8d46-0f0a1ff6a746-title-1",
+                "template--21727693668625__e5074a1b-42e8-4a9a-8d46-0f0a1ff6a746-price-1",
+                "template--21727693668625__e5074a1b-42e8-4a9a-8d46-0f0a1ff6a746-variant_picker-1",
+                "template--21727693668625__e5074a1b-42e8-4a9a-8d46-0f0a1ff6a746-quantity_selector-1",
+                "template--21727693668625__e5074a1b-42e8-4a9a-8d46-0f0a1ff6a746-buy_buttons-1",
+                "template--21727693668625__e5074a1b-42e8-4a9a-8d46-0f0a1ff6a746-share-1"
+            ],
+            "settings": {
+                "product": "vip-membership",
+                "color_scheme": "background-2",
+                "secondary_background": false,
+                "media_size": "small",
+                "constrain_to_viewport": true,
+                "media_fit": "contain",
+                "media_position": "left",
+                "image_zoom": "lightbox",
+                "hide_variants": false,
+                "enable_video_looping": false,
+                "padding_top": 36,
+                "padding_bottom": 36
+            }
+        },
+        "56fa9479-ed0d-4d41-b5e1-6de910a317fb": {
+            "type": "multicolumn",
+            "blocks": {
+                "template--21727693668625__56fa9479-ed0d-4d41-b5e1-6de910a317fb-column-1": {
+                    "type": "column",
+                    "settings": {
+                        "title": "Hands-Free Automatic Entry, Every Month.",
+                        "text": "<p>You'll be entered (100x) into every active giveaway every month.<\/p>",
+                        "link_label": "",
+                        "link": ""
+                    }
+                },
+                "template--21727693668625__56fa9479-ed0d-4d41-b5e1-6de910a317fb-column-2": {
+                    "type": "column",
+                    "settings": {
+                        "title": "Do Good for the Chance to Win Big!",
+                        "text": "<p>You'll get the opportunity to help others in our community. <\/p>",
+                        "link_label": "",
+                        "link": ""
+                    }
+                },
+                "template--21727693668625__56fa9479-ed0d-4d41-b5e1-6de910a317fb-column-3": {
+                    "type": "column",
+                    "settings": {
+                        "title": "Get Access to the OCC VIP Member Exclusive Content.",
+                        "text": "<p>You'll learn the untold truth about Paul Sr. and connect with him on all things OCC!<\/p>",
+                        "link_label": "",
+                        "link": ""
+                    }
+                }
+            },
+            "block_order": [
+                "template--21727693668625__56fa9479-ed0d-4d41-b5e1-6de910a317fb-column-1",
+                "template--21727693668625__56fa9479-ed0d-4d41-b5e1-6de910a317fb-column-2",
+                "template--21727693668625__56fa9479-ed0d-4d41-b5e1-6de910a317fb-column-3"
+            ],
+            "settings": {
+                "title": "ON THE FENCE ABOUT BECOMING A MEMBER?",
+                "heading_size": "h1",
+                "image_width": "full",
+                "image_ratio": "adapt",
+                "columns_desktop": 3,
+                "column_alignment": "left",
+                "background_style": "primary",
+                "button_label": "WHAT ARE YOU WAITING FOR?",
+                "button_link": "shopify:\/\/products\/vip-membership",
+                "color_scheme": "",
+                "columns_mobile": "1",
+                "swipe_on_mobile": false,
+                "padding_top": 36,
+                "padding_bottom": 36
+            }
+        }
+    },
+    "order": [
+        "image-with-text",
+        "be4eb578-a445-4a10-bd8c-ed0e506a600a",
+        "slideshow_F38rFy",
+        "e5074a1b-42e8-4a9a-8d46-0f0a1ff6a746",
+        "56fa9479-ed0d-4d41-b5e1-6de910a317fb"
+    ]
+}
