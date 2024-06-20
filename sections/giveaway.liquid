@@ -1,0 +1,44 @@
+<section class="giveaway">
+    <div class="giveaway__container">
+        <h3 class="giveaway__container__title">
+            {{ section.settings.giveaway_title }}
+        </h3>
+        <h2 class="giveaway__container__amount">
+            {{ section.settings.giveaway_amount }}
+        </h2>
+        <h3 class="giveaway__container__subtitle">
+            {{ section.settings.subtitle }}
+        </h3>
+        <img src="{{ 'motorcycle.svg' |  image_url  }}" alt="">
+    </div>
+</section>
+{% schema %}
+{
+    "name": "Giveaway Section",
+    "settings": [
+            {
+                "type": "text",
+                "id": "giveaway_title",
+                "label": "Giveaway Title",
+                "default": "🎉 Shop to Enter 🎉"
+            },
+            {
+                "type": "text",
+                "id": "giveaway_amount",
+                "label": "Giveaway Amount",
+                "default": "$100K"
+            },
+            {
+                "type": "text",
+                "id": "giveaway_subtitle",
+                "label": "Giveaway Subtitle",
+                "default": "🔥 Giveaway 🔥"
+            }
+        ],
+        "presets": [
+            {   
+                "name": "Giveaway Section"
+            }
+        ]
+}
+{% endschema %}
