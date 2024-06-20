@@ -1,18 +1,37 @@
-<!-- sections/custom-section.liquid -->
+<div id="steps" class="steps" style="background-image: url({{ section.settings.section_background_image |  image_url  }});">
+    <div class="steps__container">
+        {% for block in section.blocks %}
+            {% case block.type %}
+                {% when 'step' %}
+                    <div class="steps__container__step">
+                        <img class="steps__container__step__logo" src="{{ block.settings.icon |  image_url  }}"/>
+                        <h3 class="steps__container__step__title">{{ block.settings.title }}</h3>
+                        <p class="steps__container__step__description">{{ block.settings.text }}</p>
+                    </div>
+            {% endcase %}
+          {% endfor %}
 
+    </div>
+</div>
 {% schema %}
     {
-      "name": "Custom Section",
-      "settings": [],
+      "name": "Steps Section",
+      "settings": [
+        {
+            "type": "image_picker",
+            "id": "section_background_image",
+            "label": "Section BG Image"
+        }
+      ],
       "blocks": [
         {
-          "type": "block",
+          "type": "step",
           "name": "Block",
           "settings": [
             {
               "type": "image_picker",
-              "id": "logo",
-              "label": "Logo"
+              "id": "icon",
+              "label": "Icon"
             },
             {
               "type": "text",
@@ -29,7 +48,7 @@
       ],
       "presets": [
         {
-          "name": "Custom Section",
+          "name": "Steps Section",
           "category": "Custom"
         }
       ]
