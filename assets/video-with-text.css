@@ -5,11 +5,13 @@
 
 .video-section__container{
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 45% 55%;
 
 }
 .video-section__container__text__title{
-    color: red;
+    color: #CB2027;
+    font-size: 4.5rem;
+    padding-top: 3rem;
     margin: 0;
 }
 
@@ -22,6 +24,7 @@
 }
 .video-section__container__video{
     background-size: cover;
+    background-position: center;
 }
 
 .video-section__container__text__bullet-points__point {
