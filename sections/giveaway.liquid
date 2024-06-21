@@ -6,15 +6,25 @@
         <div class="giveaway__container__bg-img"
         style="background-image: url({{  'motorcycle.svg' | asset_url }}); background-size: cover; background-repeat: no-repeat"
         ></div>
-        <h3 style="margin:0;" class="giveaway__container__title">
-            {{ section.settings.giveaway_title }}
-        </h3>
+        <div class="giveaway__container__title">
+            <img style="width: 5rem;" src="{{ 'confetti.webp' | asset_url }}"/>
+            <h3 style="margin:0;" class="giveaway__container__title">
+                {{ section.settings.giveaway_title }}
+            </h3>
+            <img style="width: 5rem;" src="{{ 'confetti.webp' | asset_url }}"/>
+
+        </div>
         <h2 style="margin:0" class="giveaway__container__amount">
             {{ section.settings.giveaway_amount }}
         </h2>
-        <h3 style="margin:0" class="giveaway__container__subtitle">
-            {{ section.settings.giveaway_subtitle }}
-        </h3>
+        <div class="giveaway__container__title">
+            <img style="width: 5rem;" src="{{ 'fire.webp' | asset_url }}"/>
+            <h3 style="margin:0;" class="giveaway__container__title">
+                {{ section.settings.giveaway_subtitle }}
+            </h3>
+            <img style="width: 5rem;" src="{{ 'fire.webp' | asset_url }}"/>
+
+        </div>
         {% comment %} <img style="top:0; left:0; height: 100%;width: 100%; opacity: 0.2;height: 100%; position: absolute" src="{{ 'motorcycle.svg' | asset_url }}" alt=""> {% endcomment %}
 
     </div>

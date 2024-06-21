@@ -1,18 +1,43 @@
-<section class="insta-posts">
-    <div class="insta-posts__container">
-
-    </div>
-</section>
+{{ 'insta-posts-slider.css' | asset_url | stylesheet_tag }}
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'insta-post' %}
+          <div class="swiper-slide" style="width: 10rem">
+            <a href="https://www.instagram.com/orangecountychoppers"  style="background-image: url('{{ block.settings.insta-post |  image_url }}');height: 100%; width: 100%; background-repeat: no-repeat; background-size: cover; display: block">
+            </a>
+          </div>
+      {% endcase %}
+    {% endfor %}
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
 {% schema %}
 {
-    "name": "Insta Posts Slider",
-    "settings": [
-        
-        ],
-        "presets": [
-            {
-                "name": "Insta Posts Slider"
-            }
-        ]
+  "name": "Insta Posts Slider",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Insta Posts Slider"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "insta-post",
+      "name": "Insta post",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "insta-post",
+          "label": "Image"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}

@@ -1,6 +1,73 @@
 .offer__container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    align-items: center;
     padding: 7rem 6rem;
     margin: 0 auto;
+}
+
+.offer__container{
+    /* padding: 2rem 6rem; */
+}
+
+.offer__container__center > img{
+    position: absolute;
+}
+
+.offer__container__right__points__text{
+    line-height: 1;
+}
+
+.offer__container__left__winning-amount{
+    line-height: 1.2;
+}
+
+@media screen and (max-width: 1250px) {
+    .offer__container__center > img{
+        height: 160% !important;
+    }
+    .offer__container{
+        padding: 2rem 6rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .offer__container{
+        padding: 2rem 3rem;
+    }
+}
+@media screen and (max-width: 850px) {
+    .offer__container__left__button {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 720px) {
+    .offer__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .offer__container__left{
+        text-align: center;
+    }
+    .offer__container__center > img{
+        position: static;
+        width: 20rem;
+        padding: 3rem;
+    }
+    .steps__container {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .steps__container {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    .steps__container__step{
+        margin-bottom: 2rem;
+    }
+    .steps__container{
+        padding: 5rem 0;
+    }
 }

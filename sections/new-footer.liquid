@@ -1,0 +1,68 @@
+{{ 'new-footer.css' | asset_url | stylesheet_tag }}
+
+<section class="n-footer" style="background-image: url('{{ section.settings.footer_bg |  image_url  }}');">
+  <div class="n-footer__container">
+    <div class="n-footer__container__left">
+      <img class="n-footer__container__left__logo" src="{{ section.settings.footer_logo |  image_url }}" alt="">
+      <div class="n-footer__container__left__socials">
+        <p>Follow Us</p>
+      </div>
+      <div class="n-footer__container__left__newsletter">
+        <p>Subscribe to our newsletter to get the latest news and insights right in your inbox</p>
+      </div>
+    </div>
+    <div class="n-footer__container__right">
+      <div class="n-footer__container__right__menu-1">
+        {% if section.settings.footer_menu_1 != blank %}
+          {% for link in linklists['main-menu'].links -%}
+            {{ link.title | link_to: link.url }}
+          {%- endfor %}
+        {% endif %}
+      </div>
+      <div class="n-footer__container__right__menu-1">
+        {% if section.settings.footer_menu_1 != blank %}
+          {% for link in linklists['main-menu'].links -%}
+            {{ link.title | link_to: link.url }}
+          {%- endfor %}
+        {% endif %}
+      </div>
+      <div class="n-footer__container__right__menu-1">
+        {% if section.settings.footer_menu_1 != blank %}
+          {% for link in linklists['main-menu'].links -%}
+            {{ link.title | link_to: link.url }}
+          {%- endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="n-footer__container__line"></div>
+  <div class="n-footer__copyright-text">© 2024 <a href="https://orangecountychoppers.com/" style="color: red; ">Orange County Choppers.</a> All Rights Reserved.</div>
+</section>
+
+{% schema %}
+{
+  "name": "New Footer",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "footer_bg",
+      "label": "Footer Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "footer_logo",
+      "label": "Footer Logo"
+    },
+    {
+      "type": "link_list",
+      "id": "footer_menu_1",
+      "label": "Footer Menu 1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "New Footer"
+    }
+  ]
+}
+{% endschema %}

@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
+    {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+    {{ 'swiper-bundle.min.js' | asset_url | script_tag }}
+    <style>
+      .swiper {
+        width: 100%;
+        height: 300px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    >
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     {% comment %} Google Fonts {% endcomment %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -255,10 +269,10 @@
       }
     {% endstyle %}
 
-    {{ 'steps-section.css' |  asset_url |  stylesheet_tag }}
-    {{ 'video-with-text.css' |  asset_url |  stylesheet_tag }}
-    {{ 'offer.css' |  asset_url |  stylesheet_tag }}
-    {{ 'giveaway.css' |  asset_url |  stylesheet_tag }}
+    {{ 'steps-section.css' | asset_url | stylesheet_tag }}
+    {{ 'video-with-text.css' | asset_url | stylesheet_tag }}
+    {{ 'offer.css' | asset_url | stylesheet_tag }}
+    {{ 'giveaway.css' | asset_url | stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
@@ -290,7 +304,10 @@
     </script>
   </head>
 
-  <body style="background-color: white" class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+  <body
+    style="background-color: white"
+    class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}"
+  >
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
@@ -356,5 +373,28 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const swiper = new Swiper('.swiper', {
+          slidesPerView: 6,
+          spaceBetween: 10,
+          // Optional parameters
+          direction: 'horizontal',
+          loop: true,
+
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+
+        });
+      });
+    </script>
   </body>
 </html>

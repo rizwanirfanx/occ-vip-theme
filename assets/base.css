@@ -1192,8 +1192,10 @@ deferred-media {
 
 .button--secondary,
 .button--tertiary {
-  --color-button: var(--color-secondary-button);
-  --color-button-text: var(--color-secondary-button-text);
+  /* --color-button: var(--color-secondary-button); */
+  --color-button: 203, 32, 39;
+  --color-button-text: white;
+  /* --color-button-text: var(--color-secondary-button-text); */
 }
 
 .button--tertiary {
