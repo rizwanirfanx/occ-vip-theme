@@ -14,12 +14,6 @@
         height: 300px;
       }
     </style>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    >
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     {% comment %} Google Fonts {% endcomment %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -376,18 +370,15 @@
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const swiper = new Swiper('.swiper', {
-          slidesPerView: 6,
+          slidesPerView: 5,
           spaceBetween: 10,
-          // Optional parameters
           direction: 'horizontal',
           loop: true,
 
-          // If we need pagination
           pagination: {
             el: '.swiper-pagination',
           },
 
-          // Navigation arrows
           navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
