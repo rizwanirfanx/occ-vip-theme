@@ -1,0 +1,25 @@
+.product__info__container{
+    padding-top: 3rem;
+}
+.product__info__container__headings{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border-bottom: 1px solid #3e34343c;
+}
+.product__info__container__heading{
+    text-align: center;
+}
+.product__info__container__heading--active{
+    text-align: center;
+    color: #CB2027;
+    border-bottom: 1px solid #CB2027;
+}
+.product__info__container__heading:hover{
+    cursor: pointer;
+    color: #CB2027;
+    border-bottom: 1px solid #CB2027;
+}
+
+.product__info__container__descriptions {
+    padding-top: 3rem;
+}

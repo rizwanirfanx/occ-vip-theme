@@ -1,0 +1,14 @@
+.product__qualities__container__item > img {
+    width: 4rem;
+}
+
+.product__qualities__container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 44rem;
+}
+.product__qualities__container__item{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}

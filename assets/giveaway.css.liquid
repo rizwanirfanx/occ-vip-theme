@@ -5,6 +5,9 @@
     z-index: 1;
 }
 
+.giveaway__container{
+    padding: 2rem 3rem;
+}
 .giveaway__container:after {
     content: ' ';
     display: block;
@@ -22,6 +25,9 @@
 
 .giveaway__container__title > h3{
     padding: 0 3rem;
+}
+.giveaway__container__title > img{
+    width: 5rem;
 }
 .giveaway__container__title{
     display: flex;
@@ -45,12 +51,29 @@
 }
 
 @media screen and (max-width: 700px) {
-.giveaway__container__title{
-    font-size: 5rem
+    .giveaway__container__title{
+        font-size: 5rem
 
-}
-.giveaway__container__amount{
-    font-size: 12rem
-}
+    }
+    .giveaway__container__amount{
+        font-size: 12rem
+    }
     
+}
+
+@media screen and (max-width: 600px) {
+    .giveaway__container__title > h3{
+        padding: 0 1rem;
+        font-size: 3.5rem;
+    }
+    .giveaway__container__title > img {
+        width: 4rem;
+    }
+    .giveaway__container{
+        padding: 2rem 0;
+
+    }
+    .giveaway__container__amount {
+        font-size: 9rem;
+    }
 }

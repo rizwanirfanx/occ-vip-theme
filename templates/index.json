@@ -8,257 +8,256 @@
 * ------------------------------------------------------------
 */
 {
-    "sections": {
-      "hero-section": {
-        "type": "hero-section",
-        "settings": {
-        }
-      },
-      "giveaway-banner": {
-        "type": "giveaway-banner",
-        "settings": {
-        }
-      },
-      "featured_collection_jKQdeK": {
-        "type": "featured-collection",
-        "settings": {
-          "title": "Shop Merch, Earn Entries",
-          "heading_size": "h1",
-          "description": "<p>Earn Entries with every purchase<\/p>",
-          "show_description": false,
-          "description_style": "body",
-          "collection": "all-products",
-          "products_to_show": 16,
-          "columns_desktop": 4,
-          "full_width": false,
-          "show_view_all": true,
-          "view_all_style": "solid",
-          "enable_desktop_slider": false,
-          "color_scheme": "inverse",
-          "image_ratio": "adapt",
-          "image_shape": "default",
-          "show_secondary_image": false,
-          "show_vendor": false,
-          "show_rating": false,
-          "enable_quick_add": false,
-          "columns_mobile": "2",
-          "swipe_on_mobile": false,
-          "padding_top": 36,
-          "padding_bottom": 36
-        }
-      },
-      "video-with-text": {
-        "type": "video-with-text",
-        "blocks": {
-          "bullet_point_exXebp": {
-            "type": "bullet_point",
-            "settings": {
-              "bullet_point_image": "shopify:\/\/shop_images\/Group_150778.svg",
-              "bullet_point_title": "Purchase Products",
-              "bullet_point_description": "Default Description for Bullet Point"
-            }
-          },
-          "bullet_point_qMFeMR": {
-            "type": "bullet_point",
-            "settings": {
-              "bullet_point_image": "shopify:\/\/shop_images\/Group_150779.svg",
-              "bullet_point_title": "Earn Points",
-              "bullet_point_description": "Default Description for Bullet Point"
-            }
-          },
-          "bullet_point_eKptTK": {
-            "type": "bullet_point",
-            "settings": {
-              "bullet_point_image": "shopify:\/\/shop_images\/Group_150780.svg",
-              "bullet_point_title": "Win $100,000 Cash",
-              "bullet_point_description": "Default Description for Bullet Point"
-            }
-          }
-        },
-        "block_order": [
-          "bullet_point_exXebp",
-          "bullet_point_qMFeMR",
-          "bullet_point_eKptTK"
-        ],
-        "settings": {
-          "section_bg_image": "shopify:\/\/shop_images\/image-mainhome-3_1.png",
-          "video_url": "",
-          "section_image": "shopify:\/\/shop_images\/338107_1015043264486_1.webp",
-          "section_title": "Make History as the Next Winner"
-        }
-      },
-      "featured_collection_Nx6xap": {
-        "type": "featured-collection",
-        "settings": {
-          "title": "Best Sellers",
-          "heading_size": "h1",
-          "description": "",
-          "show_description": false,
-          "description_style": "body",
-          "collection": "frontpage",
-          "products_to_show": 2,
-          "columns_desktop": 4,
-          "full_width": false,
-          "show_view_all": true,
-          "view_all_style": "solid",
-          "enable_desktop_slider": false,
-          "color_scheme": "inverse",
-          "image_ratio": "adapt",
-          "image_shape": "default",
-          "show_secondary_image": false,
-          "show_vendor": false,
-          "show_rating": false,
-          "enable_quick_add": false,
-          "columns_mobile": "2",
-          "swipe_on_mobile": false,
-          "padding_top": 36,
-          "padding_bottom": 36
-        }
-      },
-      "offer_iWcqMK": {
-        "type": "offer",
-        "blocks": {
-          "bullet_point_zFj6pH": {
-            "type": "bullet_point",
-            "settings": {
-              "bullet_point": "Buy Products from store"
-            }
-          },
-          "bullet_point_hkCQLE": {
-            "type": "bullet_point",
-            "settings": {
-              "bullet_point": "Earn Entries for every purchase"
-            }
-          },
-          "bullet_point_9Chxg8": {
-            "type": "bullet_point",
-            "settings": {
-              "bullet_point": "More you buy, more entries you earn"
-            }
-          },
-          "bullet_point_aiz6FT": {
-            "type": "bullet_point",
-            "settings": {
-              "bullet_point": "Winner Announced August 2024"
-            }
-          }
-        },
-        "block_order": [
-          "bullet_point_zFj6pH",
-          "bullet_point_hkCQLE",
-          "bullet_point_9Chxg8",
-          "bullet_point_aiz6FT"
-        ],
-        "settings": {
-        }
-      },
-      "steps_T7yfG3": {
-        "type": "steps",
-        "blocks": {
-          "step_JcJMeP": {
-            "type": "step",
-            "settings": {
-              "icon": "shopify:\/\/shop_images\/Path_256281.svg",
-              "title": "01: SHOP",
-              "text": "Browse our site and add your favorite product to cart"
-            }
-          },
-          "step_w7UBWT": {
-            "type": "step",
-            "settings": {
-              "icon": "shopify:\/\/shop_images\/Path_256282.svg",
-              "title": "02: CHECK-OUT",
-              "text": "When you are done shopping, proceed to checkout"
-            }
-          },
-          "step_U96KzU": {
-            "type": "step",
-            "settings": {
-              "icon": "shopify:\/\/shop_images\/voucher-icon.svg",
-              "title": "03: ENTERED",
-              "text": "Every $1 spent in our store is submitted as 25 Entries into the giveaway drawing"
-            }
-          }
-        },
-        "block_order": [
-          "step_JcJMeP",
-          "step_w7UBWT",
-          "step_U96KzU"
-        ],
-        "settings": {
-          "bg_image": "shopify:\/\/shop_images\/43_1.png"
-        }
-      },
-      "giveaway_bFxt3w": {
-        "type": "giveaway",
-        "settings": {
-          "giveaway_title": "Shop to Enter",
-          "giveaway_amount": "$100K",
-          "giveaway_subtitle": "Giveaway"
-        }
-      },
-      "insta_posts_slider_pieyCk": {
-        "type": "insta-posts-slider",
-        "blocks": {
-          "insta_post_g8LADU": {
-            "type": "insta-post",
-            "settings": {
-              "insta-post": "shopify:\/\/shop_images\/orangecountychoppers_1718895548_3394664344905379602_30630916.jpg"
-            }
-          },
-          "insta_post_CikeTy": {
-            "type": "insta-post",
-            "settings": {
-              "insta-post": "shopify:\/\/shop_images\/405824_1015051718648.png"
-            }
-          },
-          "insta_post_HKrNtn": {
-            "type": "insta-post",
-            "settings": {
-              "insta-post": "shopify:\/\/shop_images\/outlaw_tv_group_1.png"
-            }
-          },
-          "insta_post_cmBUhG": {
-            "type": "insta-post",
-            "settings": {
-              "insta-post": "shopify:\/\/shop_images\/Inked_Magazine_Paul__2.png"
-            }
-          },
-          "insta_post_Ye6Ufr": {
-            "type": "insta-post",
-            "settings": {
-              "insta-post": "shopify:\/\/shop_images\/1501507_101533756682.png"
-            }
-          },
-          "insta_post_BQk4Nw": {
-            "type": "insta-post",
-            "settings": {
-              "insta-post": "shopify:\/\/shop_images\/Inked_Magazine_Paul__1.png"
-            }
-          }
-        },
-        "block_order": [
-          "insta_post_g8LADU",
-          "insta_post_CikeTy",
-          "insta_post_HKrNtn",
-          "insta_post_cmBUhG",
-          "insta_post_Ye6Ufr",
-          "insta_post_BQk4Nw"
-        ],
-        "settings": {
-        }
+  "sections": {
+    "hero-section": {
+      "type": "hero-section",
+      "settings": {
       }
     },
-    "order": [
-      "hero-section",
-      "giveaway-banner",
-      "featured_collection_jKQdeK",
-      "video-with-text",
-      "featured_collection_Nx6xap",
-      "offer_iWcqMK",
-      "steps_T7yfG3",
-      "giveaway_bFxt3w",
-      "insta_posts_slider_pieyCk"
-    ]
-  }
-  
+    "giveaway-banner": {
+      "type": "giveaway-banner",
+      "settings": {
+      }
+    },
+    "featured_collection_jKQdeK": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop Merch, Earn Entries",
+        "heading_size": "h1",
+        "description": "<p>Earn Entries with every purchase<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all-products",
+        "products_to_show": 16,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "inverse",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video-with-text": {
+      "type": "video-with-text",
+      "blocks": {
+        "bullet_point_exXebp": {
+          "type": "bullet_point",
+          "settings": {
+            "bullet_point_image": "shopify:\/\/shop_images\/Group_150778.svg",
+            "bullet_point_title": "Purchase Products",
+            "bullet_point_description": "Default Description for Bullet Point"
+          }
+        },
+        "bullet_point_qMFeMR": {
+          "type": "bullet_point",
+          "settings": {
+            "bullet_point_image": "shopify:\/\/shop_images\/Group_150779.svg",
+            "bullet_point_title": "Earn Points",
+            "bullet_point_description": "Default Description for Bullet Point"
+          }
+        },
+        "bullet_point_eKptTK": {
+          "type": "bullet_point",
+          "settings": {
+            "bullet_point_image": "shopify:\/\/shop_images\/Group_150780.svg",
+            "bullet_point_title": "Win $100,000 Cash",
+            "bullet_point_description": "Default Description for Bullet Point"
+          }
+        }
+      },
+      "block_order": [
+        "bullet_point_exXebp",
+        "bullet_point_qMFeMR",
+        "bullet_point_eKptTK"
+      ],
+      "settings": {
+        "section_bg_image": "shopify:\/\/shop_images\/image-mainhome-3_1.png",
+        "video_url": "",
+        "section_image": "shopify:\/\/shop_images\/338107_1015043264486_1.webp",
+        "section_title": "Make History as the Next Winner"
+      }
+    },
+    "featured_collection_Nx6xap": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Best Sellers",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 2,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "inverse",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "offer_iWcqMK": {
+      "type": "offer",
+      "blocks": {
+        "bullet_point_zFj6pH": {
+          "type": "bullet_point",
+          "settings": {
+            "bullet_point": "Buy Products from store"
+          }
+        },
+        "bullet_point_hkCQLE": {
+          "type": "bullet_point",
+          "settings": {
+            "bullet_point": "Earn Entries for every purchase"
+          }
+        },
+        "bullet_point_9Chxg8": {
+          "type": "bullet_point",
+          "settings": {
+            "bullet_point": "More you buy, more entries you earn"
+          }
+        },
+        "bullet_point_aiz6FT": {
+          "type": "bullet_point",
+          "settings": {
+            "bullet_point": "Winner Announced August 2024"
+          }
+        }
+      },
+      "block_order": [
+        "bullet_point_zFj6pH",
+        "bullet_point_hkCQLE",
+        "bullet_point_9Chxg8",
+        "bullet_point_aiz6FT"
+      ],
+      "settings": {
+      }
+    },
+    "steps_T7yfG3": {
+      "type": "steps",
+      "blocks": {
+        "step_JcJMeP": {
+          "type": "step",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Path_256281.svg",
+            "title": "01: SHOP",
+            "text": "Browse our site and add your favorite product to cart"
+          }
+        },
+        "step_w7UBWT": {
+          "type": "step",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Path_256282.svg",
+            "title": "02: CHECK-OUT",
+            "text": "When you are done shopping, proceed to checkout"
+          }
+        },
+        "step_U96KzU": {
+          "type": "step",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/voucher-icon.svg",
+            "title": "03: ENTERED",
+            "text": "Every $1 spent in our store is submitted as 25 Entries into the giveaway drawing"
+          }
+        }
+      },
+      "block_order": [
+        "step_JcJMeP",
+        "step_w7UBWT",
+        "step_U96KzU"
+      ],
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/43_1.png"
+      }
+    },
+    "giveaway_bFxt3w": {
+      "type": "giveaway",
+      "settings": {
+        "giveaway_title": "Shop to Enter",
+        "giveaway_amount": "$100K",
+        "giveaway_subtitle": "Giveaway"
+      }
+    },
+    "insta_posts_slider_pieyCk": {
+      "type": "insta-posts-slider",
+      "blocks": {
+        "insta_post_g8LADU": {
+          "type": "insta-post",
+          "settings": {
+            "insta-post": "shopify:\/\/shop_images\/orangecountychoppers_1718895548_3394664344905379602_30630916.jpg"
+          }
+        },
+        "insta_post_CikeTy": {
+          "type": "insta-post",
+          "settings": {
+            "insta-post": "shopify:\/\/shop_images\/405824_1015051718648.png"
+          }
+        },
+        "insta_post_HKrNtn": {
+          "type": "insta-post",
+          "settings": {
+            "insta-post": "shopify:\/\/shop_images\/outlaw_tv_group_1.png"
+          }
+        },
+        "insta_post_cmBUhG": {
+          "type": "insta-post",
+          "settings": {
+            "insta-post": "shopify:\/\/shop_images\/Inked_Magazine_Paul__2.png"
+          }
+        },
+        "insta_post_Ye6Ufr": {
+          "type": "insta-post",
+          "settings": {
+            "insta-post": "shopify:\/\/shop_images\/1501507_101533756682.png"
+          }
+        },
+        "insta_post_BQk4Nw": {
+          "type": "insta-post",
+          "settings": {
+            "insta-post": "shopify:\/\/shop_images\/Inked_Magazine_Paul__1.png"
+          }
+        }
+      },
+      "block_order": [
+        "insta_post_g8LADU",
+        "insta_post_CikeTy",
+        "insta_post_HKrNtn",
+        "insta_post_cmBUhG",
+        "insta_post_Ye6Ufr",
+        "insta_post_BQk4Nw"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "hero-section",
+    "giveaway-banner",
+    "featured_collection_jKQdeK",
+    "video-with-text",
+    "featured_collection_Nx6xap",
+    "offer_iWcqMK",
+    "steps_T7yfG3",
+    "giveaway_bFxt3w",
+    "insta_posts_slider_pieyCk"
+  ]
+}
