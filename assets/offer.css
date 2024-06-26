@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
-    padding: 7rem 6rem;
+    padding: 3rem 6rem;
     margin: 0 auto;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .offer__container__center > img{
-    position: absolute;
+    /* position: absolute; */
 }
 
 .offer__container__right__points__text{

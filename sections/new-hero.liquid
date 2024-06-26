@@ -1,0 +1,118 @@
+{{ 'new-hero.css' | asset_url | stylesheet_tag }}
+<section class="new-hero" style="background-image: url({{ 'new-hero-section-bg.png' |  asset_url  }});">
+  <div class="new-hero__container">
+    <div class="new-hero__container__award">
+      <div class="new-hero__container__award__content">
+        <div class="new-hero__container__award__content__text">
+          <h2>{{ section.settings.reward_amount }}</h2>
+          <h4>
+            Earn Entries for Every Purchase <br>
+            Made in the Store.
+          </h4>
+          <a class="new-hero__container__award__button">
+            <span>
+              {{ section.settings.reward_btn_text }}
+            </span>
+            <div style="display: flex; padding-left: 1rem">
+              {% render 'right-arrow' %}
+            </div> 
+          </a>
+        </div>
+        <div
+          class=""
+          style=""
+        >
+          <img class="new-hero__container__image__2" src="{{ 'hero-section-image.svg' | asset_url }}" alt="">
+          {% comment %} <img src="{{ 'dark-bg.png' | asset_url }}" alt=""> {% endcomment %}
+          {% comment %}
+            <img
+              style=""
+              class="new-hero__container__image__second-layer"
+              src="{{ 'photoshoot.png' | asset_url }}"
+              alt=""
+            >
+            <img
+              style="height: 100%"
+              class="new-hero__container__image__third-layer"
+              src="{{ 'paul.png' | asset_url }}"
+              alt=""
+            >
+          {% endcomment %}
+        </div>
+      </div>
+    </div>
+    <div class="new-hero__container__steps">
+      <h3 class="new-hero__container__steps__title">HOW DO I <span class="primary-color">ENTER</span></h3>
+      <div class="new-hero__container__steps__dotted-line"></div>
+      <h4 class="new-hero__container__steps__easiness">IT'S EASY AS 1-2-3</h4>
+    </div>
+    <div class="new-hero__container__steps-cards">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'card' %}
+            <div class="new-hero__container__steps-cards__card">
+              <img src="{{ block.settings.card_icon |  image_url   }}" alt="">
+              <h3>{{ block.settings.card_title }}</h3>
+              <p>{{ block.settings.card_text }}</p>
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "New Hero Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "reward_amount",
+      "label": "Reward Amount",
+      "default": "WIN 100K"
+    },
+    {
+      "type": "text",
+      "id": "reward_subtitle",
+      "label": "Reward Subtitle",
+      "default": "Earn Entries for Every Purchase Made in the Store"
+    },
+    {
+      "type": "text",
+      "id": "reward_btn_text",
+      "label": "Reward Button Text",
+      "default": "SHOP NOW TO ENTER"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Card",
+      "type": "card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "card_icon",
+          "label": "Card Icon"
+        },
+        {
+          "type": "text",
+          "id": "card_title",
+          "label": "Card Title",
+          "default": "01: SHOP"
+        },
+        {
+          "type": "text",
+          "id": "card_text",
+          "label": "Card Text",
+          "default": "Browse the store and add your favrorite items to the shopping cart!"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "New Hero Section"
+    }
+  ]
+}
+{% endschema %}

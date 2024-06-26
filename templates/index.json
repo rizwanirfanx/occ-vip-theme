@@ -9,20 +9,55 @@
 */
 {
   "sections": {
-    "hero-section": {
-      "type": "hero-section",
+    "new_hero_VpQjqH": {
+      "type": "new-hero",
+      "blocks": {
+        "card_exYXkf": {
+          "type": "card",
+          "settings": {
+            "card_icon": "shopify:\/\/shop_images\/shop.png",
+            "card_title": "01: SHOP",
+            "card_text": "Browse the store and add your favorite items to the shopping cart!"
+          }
+        },
+        "card_7PJdH4": {
+          "type": "card",
+          "settings": {
+            "card_icon": "shopify:\/\/shop_images\/credit-card.png",
+            "card_title": "02 CHECKOUT",
+            "card_text": "When you're done shopping, proceed to the checkout."
+          }
+        },
+        "card_wiTfnR": {
+          "type": "card",
+          "settings": {
+            "card_icon": "shopify:\/\/shop_images\/ticket.png",
+            "card_title": "03: ENTRIES",
+            "card_text": "Every $1 spent earns 1 entry into the giveaway. The more you spend, the more you earn"
+          }
+        }
+      },
+      "block_order": [
+        "card_exYXkf",
+        "card_7PJdH4",
+        "card_wiTfnR"
+      ],
       "settings": {
+        "reward_amount": "WIN 100K",
+        "reward_subtitle": "Earn Entries for Every Purchase Made in the Store.",
+        "reward_btn_text": "SHOP NOW TO ENTER"
       }
     },
     "giveaway-banner": {
       "type": "giveaway-banner",
+      "disabled": true,
       "settings": {
       }
     },
     "featured_collection_jKQdeK": {
       "type": "featured-collection",
       "settings": {
-        "title": "Shop Merch, Earn Entries",
+        "title": "Earn Entries With Every Purchase",
         "heading_size": "h1",
         "description": "<p>Earn Entries with every purchase<\/p>",
         "show_description": false,
@@ -55,23 +90,23 @@
           "settings": {
             "bullet_point_image": "shopify:\/\/shop_images\/Group_150778.svg",
             "bullet_point_title": "Purchase Products",
-            "bullet_point_description": "Default Description for Bullet Point"
+            "bullet_point_description": "Browse the store and add your favorite items to your shopping cart."
           }
         },
         "bullet_point_qMFeMR": {
           "type": "bullet_point",
           "settings": {
             "bullet_point_image": "shopify:\/\/shop_images\/Group_150779.svg",
-            "bullet_point_title": "Earn Points",
-            "bullet_point_description": "Default Description for Bullet Point"
+            "bullet_point_title": "Earn Entries",
+            "bullet_point_description": "Every $1 spent earns 1 entry into the giveaway."
           }
         },
         "bullet_point_eKptTK": {
           "type": "bullet_point",
           "settings": {
             "bullet_point_image": "shopify:\/\/shop_images\/Group_150780.svg",
-            "bullet_point_title": "Win $100,000 Cash",
-            "bullet_point_description": "Default Description for Bullet Point"
+            "bullet_point_title": "Win 100K",
+            "bullet_point_description": "The more you spend, the more you earn."
           }
         }
       },
@@ -84,7 +119,7 @@
         "section_bg_image": "shopify:\/\/shop_images\/image-mainhome-3_1.png",
         "video_url": "",
         "section_image": "shopify:\/\/shop_images\/338107_1015043264486_1.webp",
-        "section_title": "Make History as the Next Winner"
+        "section_title": "You Could Win 100K"
       }
     },
     "featured_collection_Nx6xap": {
@@ -191,6 +226,7 @@
     },
     "giveaway_bFxt3w": {
       "type": "giveaway",
+      "disabled": true,
       "settings": {
         "giveaway_title": "Shop to Enter",
         "giveaway_amount": "$100K",
@@ -245,12 +281,18 @@
         "insta_post_Ye6Ufr",
         "insta_post_BQk4Nw"
       ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "hero-section": {
+      "type": "hero-section",
       "settings": {
       }
     }
   },
   "order": [
-    "hero-section",
+    "new_hero_VpQjqH",
     "giveaway-banner",
     "featured_collection_jKQdeK",
     "video-with-text",
@@ -258,6 +300,7 @@
     "offer_iWcqMK",
     "steps_T7yfG3",
     "giveaway_bFxt3w",
-    "insta_posts_slider_pieyCk"
+    "insta_posts_slider_pieyCk",
+    "hero-section"
   ]
 }

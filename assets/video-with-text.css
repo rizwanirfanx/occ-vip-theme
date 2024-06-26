@@ -1,43 +1,60 @@
-.video-section{
+.video-section {
     box-sizing: border-box;
     margin: 0;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
 
-.video-section__container{
+.video-section__container {
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 40% 60%;
+    background-color: #CD2027;
+    color: #ffffff;
 
 }
-.video-section__container__text__title{
-    color: #CB2027;
+
+.video-section__container__text__title {
+    /* color: #CB2027; */
+    color: #ffffff;
     font-size: 4.5rem;
     padding-top: 3rem;
     margin: 0;
 }
 
-.video-section__container__text__bullet-points__point__img{
+.video-section__container__text__bullet-points__point__img {
     width: 5rem;
 }
 
-.video-section__container__text{
-    padding: 3rem;
+.video-section__container__text {
+    padding: 5rem 3rem;
 }
-.video-section__container__video{
+
+.video-section__container__video {
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 5rem 3rem;
 }
-.video-section__container__video > img {
+
+.video-section__container__video__thumbnail{
+    border: 3px solid white;
+    display: block !important;
+    width: 85%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.video-section__container__video__play-button {
     width: 4rem;
 }
-.video-section__container__video > img:hover {
+
+.video-section__container__video__play-button:hover {
     cursor: pointer;
 }
 
@@ -47,23 +64,30 @@
     align-items: center;
     padding: 2rem 0;
 }
+
 .video-section__container__text__bullet-points__point__img {
     margin-right: 2rem;
 }
-.video-section__container__text__bullet-points__point__text > h4, .video-section__container__text__bullet-points__point__text > p{
+
+.video-section__container__text__bullet-points__point__text>h4,
+.video-section__container__text__bullet-points__point__text>p {
     margin: 0;
-    color: black;
+    color: white;
+    /* color: black; */
 }
+
 @media screen and (max-width: 720px) {
-    .video-section__container{
+    .video-section__container {
         display: flex;
         flex-direction: column;
     }
-    .video-section__container__video{
+
+    .video-section__container__video {
         height: 50vh;
     }
 }
-.overlay__video{
+
+.overlay__video {
     height: 100%;
     position: fixed;
     top: 50%;

@@ -1,7 +1,6 @@
 <section class="video-section">
   <div
     class="video-section__container"
-    style="background-image: url({{ section.settings.section_bg_image |  image_url  }})"
   >
     <div class="video-section__container__text">
       <h3 class="video-section__container__text__title">{{ section.settings.section_title }}</h3>
@@ -25,9 +24,13 @@
     </div>
     <div
       class="video-section__container__video"
-      style="background-image: url({{ section.settings.section_image |  image_url  }}); position: relative"
+      style=""
     >
-      <img id="yt-play-button" src="{{ 'play.webp' |  asset_url }}" alt="">
+    {% comment %} <img class="video-section__container__video__thumbnail" style="width: 100%;" src="{{ section.settings.section_image |  image_url  }}" alt=""> {% endcomment %}
+    <div class="video-section__container__video__thumbnail" style="background-image: url({{ section.settings.section_image |  image_url  }})" alt=""></div>
+      {% if section.settings.video_url != blank %}
+        <img class="video-section__container__video__play-button" id="yt-play-button" src="{{ 'play.webp' |  asset_url }}" alt="">
+      {% endif %}
     </div>
   </div>
 </section>

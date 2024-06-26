@@ -1,0 +1,168 @@
+{{ 'footer-3.css' | asset_url | stylesheet_tag }}
+<div class="footer-3" style="background-image: url({{ 'footer-3-bg-export.svg' | asset_url }})">
+  <div class="footer-3__overlay">
+    <div class="footer-3__container">
+      <div class="footer-3__container__column-1" style="">
+        <img src="{{ '01.png' |  asset_url }}" class="footer-3__container__column-1__logo">
+        <p class="footer-3__container__column-1__text" style="color: white;">
+          Founded in 1999 by Paul Teutul Sr., Orange County Choppers has grown to become a globally recognized name.
+        </p>
+        <div class="footer-3__container__column-1__social-icons">
+          <a href="https://www.facebook.com/orangecountychoppers">
+            <img
+              class="footer-3__container__column-1__social-icons__icon"
+              src="{{ 'fb-icon-footer-3.svg' |  asset_url }}"
+              alt=""
+            >
+          </a>
+          <a href="https://www.instagram.com/orangecountychoppers/">
+            <img
+              class="footer-3__container__column-1__social-icons__icon"
+              src="{{ 'insta-icon-footer-3.svg' |  asset_url }}"
+              alt=""
+            >
+          </a>
+          <a href="https://x.com/OCChoppers">
+            <img
+              class="footer-3__container__column-1__social-icons__icon"
+              src="{{ 'x-icon-footer-3.svg' |  asset_url }}"
+              alt=""
+            >
+          </a>
+          <a href="https://www.tiktok.com/@orangecountychoppers">
+            <img
+              class="footer-3__container__column-1__social-icons__icon"
+              src="{{ 'tiktok-icon-footer-3.svg' |  asset_url }}"
+              alt=""
+            >
+          </a>
+        </div>
+      </div>
+      <div class="footer-3__container__column-2" style="">
+        <h3 class="footer-3__container__column-2__title">SUPPORT</h3>
+        <div class="footer-3__container__column-2__links" style="font-family: {{ section.settings.footer_font.family }}; font-weight: {{ section.settings.footer_font.weight }}; font-style: {{ section.settings.footer_font.style }}">
+          <a
+            href="https://occvip.com/pages/official-sweepstakes-rules"
+            class="footer-3__container__column-2__links__link"
+          >
+            Official Sweepstakes Rules
+          </a>
+          <a href="https://occvip.com/pages/contact" class="footer-3__container__column-2__links__link"> Get Help </a>
+          <a href="https://occvip.com/pages/contact" class="footer-3__container__column-2__links__link">
+            Shipping Policy</a
+          >
+          <a href="https://occvip.com/pages/contact" class="footer-3__container__column-2__links__link">
+            Privacy Policy</a
+          >
+          <a href="https://occvip.com/pages/contact" class="footer-3__container__column-2__links__link">
+            Terms of Service</a
+          >
+          <a href="https://occvip.com/pages/contact" class="footer-3__container__column-2__links__link">
+            Return of Exchange Policy</a
+          >
+        </div>
+      </div>
+      <div class="footer-3__container__column-3" style="">
+        <h3 class="footer-3__container__column-2__title">MENU</h3>
+        <div class="footer-3__container__column-3__links footer-3__links">
+          <a
+            href="https://occvip.com/collections/all-products"
+            class="footer-3__container__column-2__links__link footer-3__link"
+          >
+            Shop
+          </a>
+          <a href="https://occvip.com/pages/about" class="footer-3__container__column-2__links__link"> About </a>
+          <a
+            href="https://occvip.com/products/black-occ-vip-t-shirt"
+            class="footer-3__container__column-2__links__link"
+          >
+            Top Seller
+          </a>
+          <a href="https://occvip.com/pages/contact" class="footer-3__container__column-2__links__link"> Contact Us </a>
+        </div>
+      </div>
+      <div class="footer-3__container__column-4">
+        <h3 class="footer-3__container__column-4__title">EMAILS SUCK. OURS DON'T.</h3>
+        <div {{ block.shopify_attributes }}>
+          {% form 'customer', class: 'newsletter-form' %}
+            <input type="hidden" name="contact[tags]" value="newsletter">
+            <div class="newsletter-form__field-wrapper">
+              <div class="field">
+                <input
+                  id="NewsletterForm--{{ section.id }}"
+                  type="email"
+                  name="contact[email]"
+                  class="field__input"
+                  value="{{ form.email }}"
+                  aria-required="true"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  autocomplete="email"
+                  style="background-color: #ffffff26;"
+                  {% if form.errors %}
+                    autofocus
+                    aria-invalid="true"
+                    aria-describedby="Newsletter-error--{{ section.id }}"
+                  {% elsif form.posted_successfully? %}
+                    aria-describedby="Newsletter-success--{{ section.id }}"
+                  {% endif %}
+                  placeholder="Enter your email"
+                  required
+                >
+                <label class="field__label" for="NewsletterForm--{{ section.id }}"> Enter your email </label>
+                <button
+                  style="background-color: black; width: 8rem"
+                  type="submit"
+                  class="newsletter-form__button field__button"
+                  name="commit"
+                  id="Subscribe"
+                  aria-label="{{ 'newsletter.button_label' | t }}"
+                  :w
+                >
+                  Submit
+                </button>
+              </div>
+              {%- if form.errors -%}
+                <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
+                  {%- render 'icon-error' -%}
+                  {{- form.errors.translated_fields.email | capitalize }}
+                  {{ form.errors.messages.email -}}
+                </small>
+              {%- endif -%}
+            </div>
+            {%- if form.posted_successfully? -%}
+              <h3
+                class="newsletter-form__message newsletter-form__message--success form__message"
+                id="Newsletter-success--{{ section.id }}"
+                tabindex="-1"
+                autofocus
+              >
+                {% render 'icon-success' -%}
+                {{- 'newsletter.success' | t }}
+              </h3>
+            {%- endif -%}
+          {% endform %}
+        </div>
+      </div>
+    </div>
+    <p class="footer-3__copyright-text">© 2024 OCC VIP Powered by Shopify</p>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Footer 3",
+  "settings": [
+    {
+      "type": "font_picker",
+      "id": "footer_font",
+      "label": "Footer Font",
+      "default": "helvetica_n4"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Footer 3"
+    }
+  ]
+}
+{% endschema %}

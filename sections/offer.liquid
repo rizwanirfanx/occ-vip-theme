@@ -9,7 +9,7 @@
             <a style="background-color: #CB2027;text-decoration: none; color: white; padding: 1rem 1.5rem;" href="" class="offer__container__left__button">SHOP STORE, EARN ENTRIES</a>
         </div>
         <div class="offer__container__center" style="display: flex; align-items: center; justify-content: center; position: relative; align-self: normal">
-            <img style="height: 220%;  z-index: 1;" src="https://cdn.shopify.com/s/files/1/0778/9248/5393/files/11_1.png?v=1718900447" alt="">
+            <img style=" z-index: 1;" src="{{ section.settings.center_image |  image_url  }}" alt="">
         </div>
         <div class="offer__container__right">
             <div class="offer__container__right__points">
@@ -32,7 +32,11 @@
 {
     "name": "Offer Section",
     "settings": [
-        
+        {
+            "type": "image_picker",
+            "id": "center_image",
+            "label": "Center Image"
+        }
         ],
         "presets": [
             {
@@ -54,3 +58,4 @@
         ]
 }
 {% endschema %}
+

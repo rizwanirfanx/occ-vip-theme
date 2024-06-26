@@ -90,5 +90,100 @@
         {%- endif -%}
       </li>
     {%- endfor -%}
+    <details-modal class="header__search">
+      <details>
+        <summary
+          class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle"
+          aria-haspopup="dialog"
+          aria-label="Search"
+          role="button"
+        >
+          <span>
+            <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false">
+                <use href="#icon-search">
+              </use>
+            </svg>
+            <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false">
+                <use href="#icon-close">
+              </use>
+            </svg>
+          </span>
+        </summary>
+        <div class="search-modal modal__content gradient" role="dialog" aria-modal="true" aria-label="Search">
+          <div class="modal-overlay"></div>
+          <div class="search-modal__content search-modal__content-bottom" tabindex="-1">
+            <predictive-search class="search-modal__form" data-loading-text="Loading...">
+              <form action="/search" method="get" role="search" class="search search-modal__form">
+                <div class="field">
+                  <input
+                    class="search__input field__input"
+                    id="Search-In-Modal-1"
+                    type="search"
+                    name="q"
+                    value=""
+                    placeholder="Search"
+                    role="combobox"
+                    aria-expanded="false"
+                    aria-owns="predictive-search-results"
+                    aria-controls="predictive-search-results"
+                    aria-haspopup="listbox"
+                    aria-autocomplete="list"
+                    autocorrect="off"
+                    autocomplete="off"
+                    autocapitalize="off"
+                    spellcheck="false"
+                  >
+                  <label class="field__label" for="Search-In-Modal-1">Search</label>
+                  <input type="hidden" name="options[prefix]" value="last">
+                  <button type="reset" class="reset__button field__button hidden" aria-label="Clear search term">
+                    <svg class="icon icon-close" aria-hidden="true" focusable="false">
+                        <use xlink:href="#icon-reset">
+                      </use>
+                    </svg>
+                  </button>
+                  <button class="search__button field__button" aria-label="Search">
+                    <svg class="icon icon-search" aria-hidden="true" focusable="false">
+                        <use href="#icon-search">
+                      </use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search="">
+                  <link
+                    href="//occvip.com/cdn/shop/t/4/assets/component-loading-spinner.css?v=116724955567955766481718831976"
+                    rel="stylesheet"
+                    type="text/css"
+                    media="all"
+                  >
+
+                  <div class="predictive-search__loading-state">
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      class="spinner"
+                      viewBox="0 0 66 66"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                    </svg>
+                  </div>
+                </div>
+
+                <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
+              </form></predictive-search
+            ><button
+              type="button"
+              class="search-modal__close-button modal__close-button link link--text focus-inset"
+              aria-label="Close"
+            >
+              <svg class="icon icon-close" aria-hidden="true" focusable="false">
+                  <use href="#icon-close">
+                </use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </details>
+    </details-modal>
   </ul>
 </nav>
