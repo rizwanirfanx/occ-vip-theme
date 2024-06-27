@@ -152,12 +152,12 @@
               {%- when '@app' -%}
                 {% render block %}
               {%- when 'text' -%}
-                <p
-                  class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                <h3
+                  class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %} featured__product__brand-title"
                   {{ block.shopify_attributes }}
                 >
-                  {{- block.settings.text -}}
-                </p>
+                  Orange <span style="color: #CB2027">County</span> Choppers
+                </h3>
               {%- when 'title' -%}
                 <h2 class="product__title {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
                   {%- if product.title != blank -%}
@@ -167,13 +167,19 @@
                   {%- endif -%}
                 </h2>
               {%- when 'price' -%}
-                <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-                  {%- render 'price',
-                    product: product,
-                    use_variant: true,
-                    show_badges: true,
-                    price_class: 'price--large'
-                  -%}
+                <div style="display: flex; align-items: center;">
+                  <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+                    {%- render 'price',
+                      product: product,
+                      use_variant: true,
+                      show_badges: true,
+                      price_class: 'price--large'
+                    -%}
+                  </div>
+                  <div style="display: flex; margin-left: 3rem">
+                    <p style="background-color: #60CF56; font-size: 1.2rem; padding: 0rem 1rem; display: flex; align-items: center">35 Entries</p>
+                    <p style="background-color: #CD2027;color: white; font-size: 1.2rem; padding: 0rem 0.4rem; display: flex; align-items: center">1x</p>
+                  </div>
                 </div>
                 {%- if product.quantity_price_breaks_configured? -%}
                   <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">
@@ -497,7 +503,6 @@
                 {%- endif -%}
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
-                
             {%- endcase -%}
           {%- endfor -%}
           <a

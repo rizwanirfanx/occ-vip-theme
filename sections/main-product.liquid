@@ -99,15 +99,24 @@
                   </a>
                 </div>
               {%- when 'price' -%}
-                <div style="display: flex; align-items: center; justify-content: space-between" class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+                <div
+                  style="display: flex; align-items: center; justify-content: space-between"
+                  class="no-js-hidden"
+                  id="price-{{ section.id }}"
+                  role="status"
+                  {{ block.shopify_attributes }}
+                >
                   {%- render 'price',
                     product: product,
                     use_variant: true,
                     show_badges: true,
                     price_class: 'price--large'
                   -%}
-                  <img style="width: 15rem; object-fit: contain" src="{{ 'earn_points_logo.webp' |  asset_url }}"/>
-
+                  {% comment %} <img style="width: 15rem; object-fit: contain" src="{{ 'earn_points_logo.webp' |  asset_url }}"/> {% endcomment %}
+                  <div style="display: flex;">
+                    <p style="background-color: #60CF56; font-size: 1.2rem; padding: 0rem 1rem">35 Entries</p>
+                    <p style="background-color: #CD2027;color: white; font-size: 1.2rem; padding: 0rem 0.4rem">1x</p>
+                  </div>
                 </div>
                 {%- if product.quantity_price_breaks_configured? -%}
                   <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">
@@ -793,39 +802,39 @@
     <div class="product__info">
       <div class="product__info__container">
         <div class="product__info__container__headings">
-          <h3 class="product__info__container__heading product__info__container__heading--active">Description</h3>
-          <h3 class="product__info__container__heading">Size Guide</h3>
-          <h3 class="product__info__container__heading">Shipping</h3>
+          <h3 class="product__info__container__heading product__info__container__heading--active">DETAILS</h3>
+          <h3 class="product__info__container__heading">SIZE GUIDE</h3>
+          <h3 class="product__info__container__heading">SHIPPING</h3>
         </div>
         <div class="product__info__container__descriptions">
           {% for block in section.blocks %}
             {% case block.type %}
-              {%  when 'description' %} 
-                  {%- if product.description != blank -%}
-                    <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
-                      {{ product.description }}
-                    </div>
-                  {%- endif -%}
+              {% when 'description' %}
+                {%- if product.description != blank -%}
+                  <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
+                    {{ product.description }}
+                  </div>
+                {%- endif -%}
             {% endcase %}
           {% endfor %}
         </div>
       </div>
     </div>
     <div class="social__links">
-          <div class="social__links__container">
-            <a class="social__links__container__link">
-              <img src="{{ 'pinterest_icon.svg' |  asset_url }}"/>
-              <p>Pin it</p>
-            </a>
-            <a class="social__links__container__link">
-              <img src="{{ 'facebook_icon.svg' |  asset_url }}"/>
-              <p>Share</p>
-            </a>
-            <a class="social__links__container__link">
-              <img src="{{ 'twitter_icon.svg' |  asset_url }}"/>
-              <p>Tweet</p>
-            </a>
-          </div>
+      <div class="social__links__container">
+        <a class="social__links__container__link">
+          <img src="{{ 'pinterest_red.png' |  asset_url }}">
+          <p>Pin it</p>
+        </a>
+        <a class="social__links__container__link">
+          <img src="{{ 'fb_red.png' |  asset_url }}">
+          <p>Share</p>
+        </a>
+        <a class="social__links__container__link">
+          <img src="{{ 'twitter_red.png' |  asset_url }}">
+          <p>Tweet</p>
+        </a>
+      </div>
     </div>
   </div>
 </section>

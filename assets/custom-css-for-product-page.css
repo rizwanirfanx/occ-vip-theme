@@ -20,9 +20,9 @@
 
 .social__links__container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 5rem 0;
+    padding: 5rem 2rem;
 }
 .social__links__container__link {
     display: flex;

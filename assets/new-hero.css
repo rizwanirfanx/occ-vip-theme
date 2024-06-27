@@ -237,6 +237,11 @@
         font-size: 1.3rem;
     }
 }
+@media screen and (max-width: 1485px) {
+    .new-hero__container__steps__title {
+        font-size: 5.5rem;
+    }
+}
 
 @media screen and (max-width: 1360px) {
 
@@ -250,6 +255,9 @@
 }
 
 @media screen and (max-width: 1250px) {
+    .new-hero__container__steps__title {
+        font-size: 5rem;
+    }
     .new-hero__container__award__content__text>h2 {
         font-size: 13rem;
     }
@@ -260,6 +268,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .new-hero__container__steps__title {
+        font-size: 4.5rem;
+    }
     .new-hero__container__steps__title {
         font-size: 5rem;
     }
