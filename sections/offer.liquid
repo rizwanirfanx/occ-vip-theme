@@ -1,14 +1,15 @@
-<div class="offer" style="">
-    <div style="transform: translateY(25%); position: relative; z-index:-1;">
-        <img style="background-color: white; width:100%;" src="{{ 'orange_county_chopper_text.webp' | asset_url }}" alt="" >
+<div class="offer" style="background-color: black">
+    <div style="padding-top: 2rem">
+        {% comment %} <img style="background-color: white; width:100%;" src="{{ 'orange_county_chopper_text.webp' | asset_url }}" alt="" > {% endcomment %}
+         <h3 style="text-align: center;color: white;font-size: 7rem">ORANGE <span style="color: #CB2027;">COUNTY</span> CHOPPERS</h3>
     </div>
-    <div class="offer__container" style="background-image: url('https://cdn.shopify.com/s/files/1/0778/9248/5393/files/Group_150653.png?v=1718901139'); background-repeat: no-repeat; background-size: cover;">
+    <div class="offer__container" style="">
         <div class="offer__container__left">
-            <p style="color: white; font-size: 2rem; margin:0">Become part of the crew</p>
-            <p style="font-size: 5.5rem; font-weight: 600;color:white padding-bottom: 2rem" class="offer__container__left__winning-amount">Win <br/><span style="font-weight: 500;color: #CB2027;-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: white;">$100,000</span></p>
+            <p style="color: white; font-size: 2rem; margin:0">BECOME PART OF THE CREW</p>
+            <p style="font-size: 6.5rem; font-weight: 600;color:white padding-bottom: 4rem" class="offer__container__left__winning-amount">WIN <br/><span style="color: #CB2027;-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: white;">$100,000</span></p>
             <a style="background-color: #CB2027;text-decoration: none; color: white; padding: 1rem 1.5rem;" href="" class="offer__container__left__button">SHOP STORE, EARN ENTRIES</a>
         </div>
-        <div class="offer__container__center" style="display: flex; align-items: center; justify-content: center; position: relative; align-self: normal">
+        <div class="offer__container__center" style="display: flex; align-items: flex-end; justify-content: center; position: relative; align-self: normal">
             <img style=" z-index: 1;" src="{{ section.settings.center_image |  image_url  }}" alt="">
         </div>
         <div class="offer__container__right">
@@ -16,11 +17,11 @@
                 {% for block in section.blocks %}
                     {% case block.type %}
                         {% when 'bullet_point' %}
-                            <div class="offer__container__right__points__point" style="display: flex; align-items: center; padding: 0.5rem 0;">
+                            <div class="offer__container__right__points__point" style="display: flex; align-items: center;">
                                 <div style="display: flex; align-items: center; padding-right: 1rem" class="offer__container__right__points__logo">
                                     <img style="height: 2.5rem" src="{{ 'ccc_logo_svg.svg' | asset_url }}" alt="">
                                 </div>
-                                <p class="offer__container__right__points__text">{{ block.settings.bullet_point }}</p>
+                                <p style="font-size: 2rem;" class="offer__container__right__points__text">{{ block.settings.bullet_point }}</p>
                             </div>
                     {% endcase %}
                 {% endfor %}

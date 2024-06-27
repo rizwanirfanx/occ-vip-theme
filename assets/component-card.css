@@ -197,10 +197,27 @@
 }
 
 .card__heading {
+  font-size: 2rem;
+  text-align: left;
   margin-top: 0;
   margin-bottom: 0;
 }
+.add-to-cart-btn{
+  background-color: transparent;
+  border: 1px solid rgb(203, 32, 39);
+}
+.card__rating__container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+}
+.card__rating__container__stars-image{
+  width: 8rem;
+}
 
+.card__rating__container__entries-image{
+  width: 10rem;
+}
 .card__heading:last-child {
   margin-bottom: 0;
 }

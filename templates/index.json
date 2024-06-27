@@ -54,16 +54,16 @@
       "settings": {
       }
     },
-    "featured_collection_jKQdeK": {
+    "featured_collection_jUkKDw": {
       "type": "featured-collection",
       "settings": {
-        "title": "Earn Entries With Every Purchase",
-        "heading_size": "h1",
-        "description": "<p>Earn Entries with every purchase<\/p>",
+        "title": "Featured collection",
+        "heading_size": "h0",
+        "description": "",
         "show_description": false,
         "description_style": "body",
         "collection": "all-products",
-        "products_to_show": 16,
+        "products_to_show": 25,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
@@ -75,8 +75,8 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
+        "enable_quick_add": true,
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -88,7 +88,7 @@
         "bullet_point_exXebp": {
           "type": "bullet_point",
           "settings": {
-            "bullet_point_image": "shopify:\/\/shop_images\/Group_150778.svg",
+            "bullet_point_image": "shopify:\/\/shop_images\/Mask_group.png",
             "bullet_point_title": "Purchase Products",
             "bullet_point_description": "Browse the store and add your favorite items to your shopping cart."
           }
@@ -96,7 +96,7 @@
         "bullet_point_qMFeMR": {
           "type": "bullet_point",
           "settings": {
-            "bullet_point_image": "shopify:\/\/shop_images\/Group_150779.svg",
+            "bullet_point_image": "shopify:\/\/shop_images\/Mask_group-1.png",
             "bullet_point_title": "Earn Entries",
             "bullet_point_description": "Every $1 spent earns 1 entry into the giveaway."
           }
@@ -104,7 +104,7 @@
         "bullet_point_eKptTK": {
           "type": "bullet_point",
           "settings": {
-            "bullet_point_image": "shopify:\/\/shop_images\/Group_150780.svg",
+            "bullet_point_image": "shopify:\/\/shop_images\/Mask_group-2.png",
             "bullet_point_title": "Win 100K",
             "bullet_point_description": "The more you spend, the more you earn."
           }
@@ -122,30 +122,72 @@
         "section_title": "You Could Win 100K"
       }
     },
-    "featured_collection_Nx6xap": {
-      "type": "featured-collection",
+    "featured_product_RMnUPA": {
+      "type": "featured-product",
+      "blocks": {
+        "text_rkEwaq": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_ijkx7a": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_MdKKjz": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker_bHBrxC": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector_XDmrhR": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons_43iDD6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_8gRahC": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_rkEwaq",
+        "title_ijkx7a",
+        "price_MdKKjz",
+        "variant_picker_bHBrxC",
+        "quantity_selector_XDmrhR",
+        "buy_buttons_43iDD6",
+        "share_8gRahC"
+      ],
       "settings": {
-        "title": "Best Sellers",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "frontpage",
-        "products_to_show": 2,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
+        "product": "black-occ-razor-t-shirt",
         "color_scheme": "inverse",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -185,6 +227,35 @@
         "bullet_point_aiz6FT"
       ],
       "settings": {
+        "center_image": "shopify:\/\/shop_images\/image_19_1_1.png"
+      }
+    },
+    "featured_collection_jKQdeK": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Earn Entries With Every Purchase",
+        "heading_size": "h1",
+        "description": "<p>Earn Entries with every purchase<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all-products",
+        "products_to_show": 16,
+        "columns_desktop": 3,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "inverse",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "steps_T7yfG3": {
@@ -220,6 +291,7 @@
         "step_w7UBWT",
         "step_U96KzU"
       ],
+      "disabled": true,
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/43_1.png"
       }
@@ -288,16 +360,18 @@
     "hero-section": {
       "type": "hero-section",
       "settings": {
+        "banner_image": "shopify:\/\/shop_images\/Group_151461.png"
       }
     }
   },
   "order": [
     "new_hero_VpQjqH",
     "giveaway-banner",
-    "featured_collection_jKQdeK",
+    "featured_collection_jUkKDw",
     "video-with-text",
-    "featured_collection_Nx6xap",
+    "featured_product_RMnUPA",
     "offer_iWcqMK",
+    "featured_collection_jKQdeK",
     "steps_T7yfG3",
     "giveaway_bFxt3w",
     "insta_posts_slider_pieyCk",

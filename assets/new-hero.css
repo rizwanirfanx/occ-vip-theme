@@ -260,6 +260,14 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .new-hero__container__steps__title {
+        font-size: 5rem;
+    }
+
+    .new-hero__container__steps__easiness {
+        font-size: 2rem;
+    }
+
     .new-hero__container__award__content__text>h2 {
         font-size: 11rem;
     }
